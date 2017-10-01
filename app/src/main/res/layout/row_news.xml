@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/row_news_layout"
+    style="@style/Eseba.RowNews.Layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        style="@style/Eseba.RowNews.Content">
+
+        <ImageView
+            android:id="@+id/row_news_avatar"
+            style="@style/Eseba.RowNews.Avatar"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            style="@style/Eseba.RowNews.TextContent"
+            android:layout_toLeftOf="@id/row_news_avatar">
+
+            <com.eseba.jp.widget.MyTextView
+                android:id="@+id/row_news_title"
+                style="@style/Eseba.RowNews.Title"/>
+
+            <com.eseba.jp.widget.MyTextView
+                android:id="@+id/row_news_date"
+                style="@style/Eseba.RowNews.Date"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/row_news_divider_line"
+        style="@style/Eseba.RowNews.DividerLine"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- text size -->
+    <dimen name="text_size_large">18dp</dimen>
+    <dimen name="text_size_medium">15dp</dimen>
+    <dimen name="text_size_small">12dp</dimen>
+    <dimen name="text_size_tiny">9dp</dimen>
+
+    <!-- launcher screen -->
+    <dimen name="launcher_logo_width">220dp</dimen>
+    <dimen name="launcher_logo_height">100dp</dimen>
+    <dimen name="launcher_progress_bar_width">250dp</dimen>
+
+    <!-- toolbar -->
+    <dimen name="toolbar_logo_width">100dp</dimen>
+    <dimen name="toolbar_logo_margin_vertical">15dp</dimen>
+    <dimen name="toolbar_setting_size">20dp</dimen>
+    <dimen name="toolbar_padding_horizontal">10dp</dimen>
+
+    <!-- main screen -->
+    <dimen name="main_screen_indicator">2dp</dimen>
+    <dimen name="main_screen_tab_height">48dp</dimen>
+
+    <!-- row news title -->
+    <dimen name="row_news_padding_left">10dp</dimen>
+    <dimen name="row_news_padding_right">10dp</dimen>
+    <dimen name="row_news_padding_top">10dp</dimen>
+    <dimen name="row_news_padding_bottom">10dp</dimen>
+    <dimen name="row_news_height">80dp</dimen>
+
+    <!-- all tab -->
+    <dimen name="row_carousel_padding_top">20dp</dimen>
+    <dimen name="row_carousel_indicator_padding_top">5dp</dimen>
+    <dimen name="row_carousel_indicator_padding_bottom">5dp</dimen>
+</resources>

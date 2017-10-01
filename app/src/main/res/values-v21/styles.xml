@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="Eseba.LinearProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/black</item>
+        <item name="android:progressBackgroundTint">@color/black</item>
+    </style>
+
+</resources>

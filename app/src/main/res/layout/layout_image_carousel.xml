@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:weightSum="3">
+
+    <ImageView
+        android:id="@+id/layout_image_carousel_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:id="@+id/layout_image_carousel_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/row_news_padding_left">
+
+        <com.eseba.jp.widget.MyTextView
+            android:id="@+id/layout_image_carousel_title"
+            style="@style/Eseba.Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="お子さんと楽しむ福岡のおでかけ♪GOGO!夏休"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"/>
+
+        <com.eseba.jp.widget.MyTextView
+            android:id="@+id/layout_image_carousel_comment"
+            style="@style/Eseba.Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="福岡市、福岡市近郊の日帰り温泉・スパを紹介します。"
+            android:textSize="@dimen/text_size_tiny"/>
+    </LinearLayout>
+</LinearLayout>

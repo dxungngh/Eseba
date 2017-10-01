@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:id="@+id/fragment_setting_line_all"
+        style="@style/Eseba.Setting.Row"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            style="@style/Eseba.Setting.RowText"
+            android:text="設定"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_setting_line_notification"
+        style="@style/Eseba.Setting.RowAndTitle"
+        android:layout_below="@id/fragment_setting_line_all">
+
+        <TextView
+            style="@style/Eseba.Setting.RowTitle"
+            android:text="通知設定"/>
+
+        <LinearLayout
+            android:id="@+id/fragment_setting_notification"
+            style="@style/Eseba.Setting.Row">
+
+            <TextView
+                style="@style/Eseba.Setting.RowText"
+                android:text="新着情報の通知設定"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_setting_line_area"
+        style="@style/Eseba.Setting.RowAndTitle"
+        android:layout_below="@id/fragment_setting_line_notification">
+
+        <TextView
+            style="@style/Eseba.Setting.RowTitle"
+            android:text="エリア設定"/>
+
+        <LinearLayout
+            android:id="@+id/fragment_setting_area"
+            style="@style/Eseba.Setting.Row">
+
+            <TextView
+                style="@style/Eseba.Setting.RowText"
+                android:text="表示するエリアを設定"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fragment_setting_line_gender"
+        style="@style/Eseba.Setting.RowAndTitle"
+        android:layout_below="@id/fragment_setting_line_area">
+
+        <TextView
+            style="@style/Eseba.Setting.RowTitle"
+            android:text="ジャンル設定"/>
+
+        <LinearLayout
+            android:id="@+id/fragment_setting_gender"
+            style="@style/Eseba.Setting.Row">
+
+            <TextView
+                style="@style/Eseba.Setting.RowText"
+                android:text="表示するジャンルを設定"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_setting_line_personal"
+        style="@style/Eseba.Setting.RowAndTitle"
+        android:layout_below="@id/fragment_setting_line_gender">
+
+        <TextView
+            style="@style/Eseba.Setting.RowTitle"
+            android:text="個別設定（設定した内容に合わせて情報が表示されます）"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/Eseba.Setting.Row">
+
+                <TextView
+                    style="@style/Eseba.Setting.RowText"
+                    android:text="性別"/>
+            </LinearLayout>
+
+            <View
+                style="@style/Eseba.Setting.DividerLine"/>
+
+            <LinearLayout
+                style="@style/Eseba.Setting.Row">
+
+                <TextView
+                    style="@style/Eseba.Setting.RowText"
+                    android:text="年齢"/>
+            </LinearLayout>
+
+            <View
+                style="@style/Eseba.Setting.DividerLine"/>
+
+            <LinearLayout
+                style="@style/Eseba.Setting.Row">
+
+                <TextView
+                    style="@style/Eseba.Setting.RowText"
+                    android:text="家族構成"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

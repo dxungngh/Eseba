@@ -1,0 +1,157 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Eseba">
+        <item name="android:textViewStyle">@style/Eseba.Text</item>
+    </style>
+
+    <style name="Eseba.Text">
+        <item name="android:textColor">@color/black</item>
+        <item name="font">@string/eseba_text_view_font</item>
+    </style>
+
+    <style name="Eseba.TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/black</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">8dp</item>
+        <item name="tabPaddingEnd">8dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/Eseba.TabTextAppearance</item>
+        <item name="tabSelectedTextColor">@android:color/black</item>
+    </style>
+
+    <style name="Eseba.TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Eseba.RowNews"/>
+
+    <style name="Eseba.RowNews.Layout" parent="Eseba.RowNews">
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">@dimen/row_news_padding_left</item>
+        <item name="android:paddingRight">@dimen/row_news_padding_right</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/row_news_height</item>
+    </style>
+
+    <style name="Eseba.RowNews.Content" parent="Eseba.RowNews">
+        <item name="android:paddingBottom">@dimen/row_news_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/row_news_padding_top</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Eseba.RowNews.Avatar" parent="Eseba.RowNews">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@mipmap/ic_news_avatar</item>
+    </style>
+
+    <style name="Eseba.RowNews.TextContent" parent="Eseba.RowNews">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:weightSum">3</item>
+        <item name="android:paddingRight">@dimen/row_news_padding_right</item>
+    </style>
+
+    <style name="Eseba.RowNews.Title" parent="Eseba.RowNews">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">【グリーンパーク】サマーカーニ バルin北九州</item>
+    </style>
+
+    <style name="Eseba.RowNews.Date" parent="Eseba.RowNews">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|top</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+        <item name="android:text">2017/07/14(金)～2017/09/03(日)</item>
+    </style>
+
+    <style name="Eseba.RowNews.DividerLine" parent="Eseba.RowNews">
+        <item name="android:background">@mipmap/bg_line</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <!-- setting -->
+    <style name="Eseba.Setting"/>
+
+    <style name="Eseba.Setting.Row">
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Eseba.Setting.BackButton">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">@mipmap/ic_back</item>
+    </style>
+
+    <style name="Eseba.Setting.ToggleButton">
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_gravity">center_vertical|right</item>
+        <item name="android:src">@mipmap/ic_toggle_button_on</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="Eseba.Setting.RowText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Eseba.Setting.RowTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">30dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="Eseba.Setting.RowAndTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Eseba.Setting.DividerLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+</resources>

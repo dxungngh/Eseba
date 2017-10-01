@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/row_news_padding_top">
+
+    <com.eseba.jp.widget.MyTextView
+        android:id="@+id/row_three_news_group_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/black"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="@dimen/row_news_padding_left"
+        android:paddingTop="2dp"
+        android:text="@string/news_type_1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/row_three_news_layout_1"
+        style="@style/Eseba.RowNews.Layout"
+        android:paddingTop="@dimen/row_news_padding_top">
+
+        <RelativeLayout
+            style="@style/Eseba.RowNews.Content">
+
+            <ImageView
+                android:id="@+id/row_three_news_avatar_1"
+                style="@style/Eseba.RowNews.Avatar"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                style="@style/Eseba.RowNews.TextContent"
+                android:layout_toLeftOf="@id/row_three_news_avatar_1">
+
+                <com.eseba.jp.widget.MyTextView
+                    android:id="@+id/row_three_news_title_1"
+                    style="@style/Eseba.RowNews.Title"/>
+
+                <com.eseba.jp.widget.MyTextView
+                    android:id="@+id/row_three_news_date_1"
+                    style="@style/Eseba.RowNews.Date"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/Eseba.RowNews.DividerLine"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/row_three_news_layout_2"
+        style="@style/Eseba.RowNews.Layout"
+        android:paddingTop="@dimen/row_news_padding_top">
+
+        <RelativeLayout
+            style="@style/Eseba.RowNews.Content">
+
+            <ImageView
+                android:id="@+id/row_three_news_avatar_2"
+                style="@style/Eseba.RowNews.Avatar"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                style="@style/Eseba.RowNews.TextContent"
+                android:layout_toLeftOf="@id/row_three_news_avatar_2">
+
+                <com.eseba.jp.widget.MyTextView
+                    android:id="@+id/row_three_news_title_2"
+                    style="@style/Eseba.RowNews.Title"/>
+
+                <com.eseba.jp.widget.MyTextView
+                    android:id="@+id/row_three_news_date_2"
+                    style="@style/Eseba.RowNews.Date"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/Eseba.RowNews.DividerLine"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/row_three_news_layout_3"
+        style="@style/Eseba.RowNews.Layout"
+        android:paddingTop="@dimen/row_news_padding_top">
+
+        <RelativeLayout
+            style="@style/Eseba.RowNews.Content">
+
+            <ImageView
+                android:id="@+id/row_three_news_avatar_3"
+                style="@style/Eseba.RowNews.Avatar"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                style="@style/Eseba.RowNews.TextContent"
+                android:layout_toLeftOf="@id/row_three_news_avatar_3">
+
+                <com.eseba.jp.widget.MyTextView
+                    android:id="@+id/row_three_news_title_3"
+                    style="@style/Eseba.RowNews.Title"/>
+
+                <com.eseba.jp.widget.MyTextView
+                    android:id="@+id/row_three_news_date_3"
+                    style="@style/Eseba.RowNews.Date"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

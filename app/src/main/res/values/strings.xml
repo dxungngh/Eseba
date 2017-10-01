@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Eseba</string>
+    <string name="slogan">総合イベント情報</string>
+    <string name="website_name">eseba.jp</string>
+    <string name="website_link">https://eseba.jp/</string>
+    <string name="eseba_text_view_font">fonts/KozGoPr6N-Regular.otf</string>
+    <string name="toolbar_left_text">総合イベント情報</string>
+
+    <string name="news_type_1">オープン</string>
+    <string name="news_type_2">リリース</string>
+    <string name="news_type_3">すべて</string>
+    <string name="news_type_4">イベント</string>
+    <string name="news_type_5">セミナー</string>
+    <string name="news_type_6">バーゲン</string>
+</resources>
