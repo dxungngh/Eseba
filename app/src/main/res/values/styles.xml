@@ -118,8 +118,10 @@
         <item name="android:layout_width">50dp</item>
         <item name="android:layout_height">25dp</item>
         <item name="android:layout_gravity">center_vertical|right</item>
-        <item name="android:src">@mipmap/ic_toggle_button_on</item>
+        <item name="android:background">@drawable/toggle_selector</item>
         <item name="android:scaleType">fitXY</item>
+        <item name="android:textOn">""</item>
+        <item name="android:textOff">""</item>
     </style>
 
     <style name="Eseba.Setting.RowText">

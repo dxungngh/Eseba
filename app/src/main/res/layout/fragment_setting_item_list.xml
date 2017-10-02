@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:id="@+id/fragment_setting_item_list_group_name"
+        style="@style/Eseba.Setting.Row"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fragment_setting_item_list_back"
+            style="@style/Eseba.Setting.BackButton"/>
+
+        <com.eseba.jp.widget.MyTextView
+            android:id="@+id/fragment_setting_item_list_group_name_title"
+            style="@style/Eseba.Setting.RowText"
+            android:text="熊本エリア"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Eseba.Setting.RowAndTitle"
+        android:layout_below="@id/fragment_setting_item_list_group_name">
+
+        <TextView
+            style="@style/Eseba.Setting.RowTitle"
+            android:text="表示エリア設定"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_setting_item_list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>

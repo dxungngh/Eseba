@@ -8,6 +8,7 @@ import com.eseba.jp.database.table.Area;
 import com.eseba.jp.listener.OnGetAreaListListener;
 import com.eseba.jp.network.AreaNetwork;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -63,5 +64,37 @@ public class AreaBusiness {
                 }
             }
         }
+    }
+
+    public List<String> getAreaGroupListOnDatabase() {
+        List<String> areaGroupNameList = new ArrayList<>();
+        List<Area> areaList = this.dataSource.getAllAreas();
+        if (areaList != null && areaList.size() > 0) {
+            for (Area area : areaList) {
+                String areaGroupName = area.getAreaGroupName();
+                if (!TextUtils.isEmpty(areaGroupName) && !areaGroupNameList.contains(areaGroupName)) {
+                    areaGroupNameList.add(areaGroupName);
+                }
+            }
+        }
+        return areaGroupNameList;
+    }
+
+    public List<Area> getAreaListOfGroup(String areaGroupName) {
+        List<Area> list = new ArrayList<>();
+        List<Area> areaList = this.dataSource.getAllAreas();
+        if (areaList != null && areaList.size() > 0) {
+            for (Area area : areaList) {
+                String name = area.getAreaGroupName();
+                if (!TextUtils.isEmpty(name) && !name.equals(areaGroupName)) {
+                    list.add(area);
+                }
+            }
+        }
+        return list;
+    }
+
+    public void saveArea(Area area) {
+        this.dataSource.updateArea(area.getId(), area);
     }
 }

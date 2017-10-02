@@ -45,4 +45,14 @@ public class SettingAllFragment extends Fragment {
     public void notificationOnClick() {
         this.listener.notificationOnClick();
     }
+
+    @OnClick(R.id.fragment_setting_area)
+    public void areaGroupOnClick() {
+        this.listener.areaGroupListOnClick();
+    }
+
+    @OnClick(R.id.fragment_setting_gender)
+    public void genreGroupOnClick() {
+        this.listener.genreGroupListOnClick();
+    }
 }

@@ -32,4 +32,10 @@
     <dimen name="row_carousel_padding_top">20dp</dimen>
     <dimen name="row_carousel_indicator_padding_top">5dp</dimen>
     <dimen name="row_carousel_indicator_padding_bottom">5dp</dimen>
+
+    <!-- setting -->
+    <dimen name="row_item_group_height">40dp</dimen>
+    <dimen name="row_item_group_padding_left">10dp</dimen>
+    <dimen name="row_item_group_padding_right">10dp</dimen>
+    <dimen name="row_item_group_next_image_height">15dp</dimen>
 </resources>

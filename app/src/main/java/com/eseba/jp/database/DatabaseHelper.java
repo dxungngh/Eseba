@@ -8,6 +8,7 @@ import android.util.Log;
 import com.eseba.jp.Config;
 import com.eseba.jp.database.table.Area;
 import com.eseba.jp.database.table.Banner;
+import com.eseba.jp.database.table.Configuration;
 import com.eseba.jp.database.table.Genre;
 import com.eseba.jp.database.table.GenreGroup;
 import com.eseba.jp.database.table.News;
@@ -26,6 +27,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
     private Dao<Genre, Integer> genreDao = null;
     private Dao<GenreGroup, Integer> genreGroupDao = null;
     private Dao<News, Integer> newsDao = null;
+    private Dao<Configuration, Integer> configurationDao = null;
 
     public DatabaseHelper(Context context) {
         super(context, Config.Database.DATABASE_NAME, null, Config.Database.DATABASE_VERSION);
@@ -50,6 +52,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             TableUtils.createTable(connectionSource, Genre.class);
             TableUtils.createTable(connectionSource, GenreGroup.class);
             TableUtils.createTable(connectionSource, News.class);
+            TableUtils.createTable(connectionSource, Configuration.class);
         } catch (SQLException e) {
             Log.e(TAG, "onCreate", e);
             throw new RuntimeException(e);
@@ -127,6 +130,17 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             }
         }
         return this.newsDao;
+    }
+
+    public Dao<Configuration, Integer> getConfigurationDao() {
+        if (null == this.configurationDao) {
+            try {
+                this.configurationDao = super.getDao(Configuration.class);
+            } catch (java.sql.SQLException e) {
+                Log.e(TAG, "getConfigurationDao", e);
+            }
+        }
+        return this.configurationDao;
     }
 
     public void clearAreaTable() {

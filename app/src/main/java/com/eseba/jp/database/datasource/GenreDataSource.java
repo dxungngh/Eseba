@@ -42,4 +42,21 @@ public class GenreDataSource {
             return null;
         }
     }
+
+    public List<Genre> getAllGenres() {
+        try {
+            return DatabaseManager.getInstance(context).getHelper().getGenreDao().queryForAll();
+        } catch (Exception e) {
+            Log.e(TAG, "getAllGenres", e);
+            return null;
+        }
+    }
+
+    public void saveGenre(Genre genre) {
+        try {
+            DatabaseManager.getInstance(context).getHelper().getGenreDao().update(genre);
+        } catch (Exception e) {
+            Log.e(TAG, "saveGenre", e);
+        }
+    }
 }

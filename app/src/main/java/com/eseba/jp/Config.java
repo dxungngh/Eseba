@@ -15,6 +15,8 @@ public class Config {
         public static final String PAGE_POSITION = "PAGE_POSITION";
         public static final String PAGE_TITLE = "PAGE_TITLE";
         public static final String PAGE_GENRE = "PAGE_GENRE";
+        public static final String AREA_GROUP_NAME = "AREA_GROUP_NAME";
+        public static final String GENRE_GROUP_NAME = "GENRE_GROUP_NAME";
     }
 
     public static final class Tab {

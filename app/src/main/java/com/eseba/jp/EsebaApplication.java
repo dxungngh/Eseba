@@ -5,11 +5,13 @@ import android.app.Application;
 import com.crashlytics.android.Crashlytics;
 import com.eseba.jp.business.AreaBusiness;
 import com.eseba.jp.business.BannerBusiness;
+import com.eseba.jp.business.ConfigurationBusiness;
 import com.eseba.jp.business.GenreBusiness;
 import com.eseba.jp.business.ImageBusiness;
 import com.eseba.jp.business.NewsBusiness;
 import com.eseba.jp.database.datasource.AreaDataSource;
 import com.eseba.jp.database.datasource.BannerDataSource;
+import com.eseba.jp.database.datasource.ConfigurationDataSource;
 import com.eseba.jp.database.datasource.GenreDataSource;
 import com.eseba.jp.database.datasource.GenreGroupDataSource;
 import com.eseba.jp.database.datasource.NewsDataSource;
@@ -61,6 +63,7 @@ public class EsebaApplication extends Application {
         ServiceRegistry.registerService(BannerBusiness.TAG, new BannerBusiness());
         ServiceRegistry.registerService(GenreBusiness.TAG, new GenreBusiness());
         ServiceRegistry.registerService(NewsBusiness.TAG, new NewsBusiness());
+        ServiceRegistry.registerService(ConfigurationBusiness.TAG, new ConfigurationBusiness());
     }
 
     private void registerDataSources() {
@@ -69,6 +72,7 @@ public class EsebaApplication extends Application {
         ServiceRegistry.registerService(GenreDataSource.TAG, new GenreDataSource(super.getApplicationContext()));
         ServiceRegistry.registerService(GenreGroupDataSource.TAG, new GenreGroupDataSource(super.getApplicationContext()));
         ServiceRegistry.registerService(NewsDataSource.TAG, new NewsDataSource(super.getApplicationContext()));
+        ServiceRegistry.registerService(ConfigurationDataSource.TAG, new ConfigurationDataSource(super.getApplicationContext()));
     }
 
     private void registerNetworks() {

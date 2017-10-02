@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/row_item_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_item_group_height"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/row_item_group_padding_left"
+    android:paddingRight="@dimen/row_item_group_padding_right">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/row_news_padding_left">
+
+        <com.eseba.jp.widget.MyTextView
+            android:id="@+id/row_item_title"
+            style="@style/Eseba.Setting.RowText"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="福岡エリア"
+            android:textSize="@dimen/text_size_small"/>
+
+        <ToggleButton
+            android:id="@+id/row_item_toggle_button"
+            style="@style/Eseba.Setting.ToggleButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/row_item_divider_line"
+        style="@style/Eseba.RowNews.DividerLine"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

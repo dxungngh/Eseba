@@ -7,5 +7,13 @@ package com.eseba.jp.bus.listener;
 public interface OnSettingClickListener {
     void notificationOnClick();
 
+    void areaGroupListOnClick();
+
+    void areaGroupOnClick(String areaGroupName);
+
+    void genreGroupListOnClick();
+
+    void genreGroupOnClick(String genreGroupName);
+
     void onBackFragmentPressed();
 }

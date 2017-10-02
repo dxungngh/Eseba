@@ -10,6 +10,7 @@ import com.eseba.jp.database.table.GenreGroup;
 import com.eseba.jp.listener.OnGetGenreGroupListListener;
 import com.eseba.jp.network.GenreNetwork;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -100,5 +101,37 @@ public class GenreBusiness {
             }
         }
         return false;
+    }
+
+    public List<String> getGenreGroupListOnDatabase() {
+        List<String> genreGroupNameList = new ArrayList<>();
+        List<Genre> genreList = this.genreDataSource.getAllGenres();
+        if (genreList != null && genreList.size() > 0) {
+            for (Genre genre : genreList) {
+                String genreGroupName = genre.getGenreGroupName();
+                if (!TextUtils.isEmpty(genreGroupName) && !genreGroupNameList.contains(genreGroupName)) {
+                    genreGroupNameList.add(genreGroupName);
+                }
+            }
+        }
+        return genreGroupNameList;
+    }
+
+    public List<Genre> getGenreListOfGroup(String genreGroupName) {
+        List<Genre> list = new ArrayList<>();
+        List<Genre> genreList = this.genreDataSource.getAllGenres();
+        if (genreList != null && genreList.size() > 0) {
+            for (Genre genre : genreList) {
+                String name = genre.getGenreGroupName();
+                if (!TextUtils.isEmpty(name) && !name.equals(genreGroupName)) {
+                    list.add(genre);
+                }
+            }
+        }
+        return list;
+    }
+
+    public void saveGenre(Genre genre) {
+        this.genreDataSource.saveGenre(genre);
     }
 }
